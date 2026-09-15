@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENZRAME — Frames for the way you actually live</title>
+<meta name="description" content="Aesthetic wall frames for Gen-Z bedrooms, study setups and room decor. Mou Toji, Peace Budh, Ocean — and custom frames made from your own pictures.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- grain overlay -->
+<svg class="grain-svg" aria-hidden="true">
+  <filter id="grain-filter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+    <feColorMatrix type="saturate" values="0"></feColorMatrix>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#grain-filter)"></rect>
+</svg>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="logo">GENZRAME</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#custom" class="nav-link">Custom Frames</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h2l.4 2M7 13h10l3-7H6.4M7 13L5.4 5M7 13l-1.7 5.1A1 1 0 0 0 6.24 19.5H18M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#shop" class="mobile-link">Shop</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#custom" class="mobile-link">Custom Frames</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <p class="hero-kicker">Wall art for rooms that actually feel like you</p>
+        <h1 class="hero-headline">YOUR WALL.<br>YOUR VIBE.</h1>
+        <p class="hero-sub">Aesthetic frames made for spaces that feel like you.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop Collection</a>
+          <a href="#custom" class="btn btn-ghost">Custom Frame</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="frame-stack">
+          <img src="images/ocean.jpg" alt="Ocean — minimalist gold sunset lake print" class="frame-float frame-1">
+          <img src="images/mou-toji.jpg" alt="Mou Toji — Mount Fuji cherry blossom print" class="frame-float frame-2">
+          <img src="images/peace-budh.jpg" alt="Peace Budh — modern Buddha portrait print" class="frame-float frame-3">
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED COLLECTION ================= -->
+  <section class="section" id="shop">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title">Curated for your space</h2>
+        <p class="section-desc">Three prints. Three moods. Every one built for a Gen-Z wall that isn't afraid of colour.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card reveal" data-id="mou-toji" data-name="Mou Toji" data-price="349" data-image="images/mou-toji.jpg" data-desc="A restless sky swirling over Mount Fuji, painted mid-motion. For walls that want a little chaos with their calm.">
+          <button class="product-card-open" aria-label="Quick view Mou Toji">
+            <div class="product-image-wrap">
+              <img src="images/mou-toji.jpg" alt="Mou Toji frame — Mount Fuji and cherry blossoms in a swirling sky" loading="lazy">
+            </div>
+          </button>
+          <div class="product-info">
+            <div class="product-info-top">
+              <h3 class="product-name">Mou Toji</h3>
+              <span class="product-price">₹349</span>
+            </div>
+            <p class="product-desc">A restless sky over Fuji, painted in motion — for walls with a little chaos in them.</p>
+            <div class="product-actions">
+              <button class="btn btn-outline btn-sm add-to-cart-btn">Add to Cart</button>
+              <button class="btn btn-primary btn-sm buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-id="peace-budh" data-name="Peace Budh" data-price="499" data-image="images/peace-budh.jpg" data-desc="A modern Buddha portrait rendered in gold, jade and warm textured light. Stillness, framed.">
+          <button class="product-card-open" aria-label="Quick view Peace Budh">
+            <div class="product-image-wrap">
+              <img src="images/peace-budh.jpg" alt="Peace Budh frame — modern Buddha portrait in gold and jade" loading="lazy">
+            </div>
+          </button>
+          <div class="product-info">
+            <div class="product-info-top">
+              <h3 class="product-name">Peace Budh</h3>
+              <span class="product-price">₹499</span>
+            </div>
+            <p class="product-desc">A modern Buddha portrait in gold and jade — stillness you can hang on a wall.</p>
+            <div class="product-actions">
+              <button class="btn btn-outline btn-sm add-to-cart-btn">Add to Cart</button>
+              <button class="btn btn-primary btn-sm buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal" data-id="ocean" data-name="Ocean" data-price="249" data-image="images/ocean.jpg" data-desc="Minimal shorelines and warm gold light drifting over still water. The quiet corner your room's been missing.">
+          <button class="product-card-open" aria-label="Quick view Ocean">
+            <div class="product-image-wrap">
+              <img src="images/ocean.jpg" alt="Ocean frame — minimalist gold sunset over a still lake" loading="lazy">
+            </div>
+          </button>
+          <div class="product-info">
+            <div class="product-info-top">
+              <h3 class="product-name">Ocean</h3>
+              <span class="product-price">₹249</span>
+            </div>
+            <p class="product-desc">Minimal shorelines, warm gold light — the quiet corner your room's been missing.</p>
+            <div class="product-actions">
+              <button class="btn btn-outline btn-sm add-to-cart-btn">Add to Cart</button>
+              <button class="btn btn-primary btn-sm buy-now-btn">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY GENZRAME ================= -->
+  <section class="section section-tight" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title">Why Genzrame</h2>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <h3>Premium Print Quality</h3>
+          <p>High-resolution giclée-grade prints with true colour and zero fade, on textured art paper that holds detail.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+          </div>
+          <h3>Aesthetic Designs</h3>
+          <p>Art directed for the way Gen-Z actually decorates — bold, moody, a little maximal, always intentional.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Affordable Prices</h3>
+          <p>Gallery-level finish without the gallery markup. Frames start at ₹249, no drop in quality.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>
+          </div>
+          <h3>Made For Your Space</h3>
+          <p>Sized for dorms, PGs, study corners and shared rooms — easy to hang, easy to move, easy to love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CUSTOM FRAME ================= -->
+  <section class="custom-section" id="custom">
+    <div class="custom-glow"></div>
+    <div class="container">
+      <div class="custom-inner reveal">
+        <h2 class="custom-title">Make it personal.</h2>
+        <p class="custom-text">Have your own artwork, anime character or memory?<br>Turn it into a frame made for your wall.</p>
+        <button class="btn btn-primary btn-lg" id="customFrameBtn">Order Custom Frame</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title">On the wall</h2>
+        <p class="section-desc">A closer look at the prints, the way you'd actually see them.</p>
+      </div>
+
+      <div class="masonry">
+        <div class="masonry-item tall reveal"><img src="images/mou-toji.jpg" alt="Mou Toji print detail" loading="lazy"></div>
+        <div class="masonry-item short reveal"><img src="images/peace-budh.jpg" alt="Peace Budh print detail" loading="lazy"></div>
+        <div class="masonry-item medium reveal"><img src="images/ocean.jpg" alt="Ocean print detail" loading="lazy"></div>
+        <div class="masonry-item medium reveal"><img src="images/peace-budh.jpg" alt="Peace Budh full print" loading="lazy"></div>
+        <div class="masonry-item tall reveal"><img src="images/ocean.jpg" alt="Ocean full print" loading="lazy"></div>
+        <div class="masonry-item short reveal"><img src="images/mou-toji.jpg" alt="Mou Toji full print" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="section-title">From the community</h2>
+        <p class="section-desc">Sample reviews — swap these for your own once real orders come in.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Peace Budh looks even better in person. Ordered it for my study table wall and it's basically the whole vibe of my room now."</p>
+          <div class="testimonial-author">
+            <span class="author-name">Ananya R.</span>
+            <span class="author-tag">Verified buyer — sample review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Got Ocean and Mou Toji together for my hostel room. Packaging was solid, colours are exactly like the photos, zero complaints."</p>
+          <div class="testimonial-author">
+            <span class="author-name">Kabir S.</span>
+            <span class="author-tag">Verified buyer — sample review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Ordered a custom frame of my own sketch over WhatsApp — super easy process and it turned out cleaner than I expected."</p>
+          <div class="testimonial-author">
+            <span class="author-name">Meher K.</span>
+            <span class="author-tag">Verified buyer — sample review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2 class="section-title">Questions, answered</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What sizes are available?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Our standard frames come in A4 (21 × 29.7cm) and A3 (29.7 × 42cm). Need something bigger for a feature wall? Message us on WhatsApp and we'll sort it out.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I place an order?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Add your picks to the cart and hit checkout, or tap "Buy Now" on any product to order directly over WhatsApp. Either way, we confirm details with you before it ships.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does delivery take?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Most orders ship within 2-3 business days and arrive within 5-7 days across India. Custom frames may take slightly longer depending on the design.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I order a custom frame?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — send us your artwork, favourite character or a personal photo over WhatsApp and we'll turn it into a frame built for your wall.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What payment methods are accepted?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>UPI, cards and cash on delivery in select areas. Payment details are shared and confirmed with you directly on WhatsApp before dispatch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="final-cta">
+    <div class="final-cta-glow"></div>
+    <div class="container">
+      <h2 class="final-cta-title reveal">Your wall is waiting.</h2>
+      <a href="#shop" class="btn btn-primary btn-lg reveal">Shop Now</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contact">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="footer-logo">GENZRAME</p>
+      <p class="footer-tagline">Frames for the way you actually live.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Shop</p>
+      <a href="#shop">All Frames</a>
+      <a href="#custom">Custom Frames</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Studio</p>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Reach us</p>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/918130986275" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GENZRAME. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= PRODUCT QUICK VIEW MODAL ================= -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Product quick view">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4 4 20"/></svg>
+    </button>
+    <div class="modal-grid">
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-info">
+        <h3 class="modal-name" id="modalName"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+
+        <div class="qty-selector">
+          <span class="qty-label">Quantity</span>
+          <div class="qty-controls">
+            <button class="qty-btn" id="qtyMinus" aria-label="Decrease quantity">−</button>
+            <span class="qty-value" id="qtyValue">1</span>
+            <button class="qty-btn" id="qtyPlus" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-outline" id="modalAddToCart">Add to Cart</button>
+          <button class="btn btn-primary" id="modalBuyNow">Buy Now</button>
+        </div>
+        <button class="btn btn-whatsapp" id="modalWhatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91.01-5.46-4.44-9.91-9.92-9.91Zm5.78 14.02c-.24.68-1.4 1.32-1.93 1.4-.49.08-1.11.11-1.8-.11-.41-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.12-4.89-4.31-.14-.19-1.17-1.55-1.17-2.96s.73-2.1 1-2.39c.24-.26.53-.32.71-.32h.51c.16 0 .38-.01.6.45.24.5.8 1.9.87 2.04.07.14.11.3.02.49-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.68-.8.87-1.07.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.86.27.14.44.2.51.32.06.11.06.65-.18 1.33Z"/></svg>
+          Order on WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="cart-overlay" id="cartOverlay">
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4 4 20"/></svg>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- injected by JS -->
+    </div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <p>Your cart is empty.</p>
+      <a href="#shop" class="btn btn-outline btn-sm" id="cartEmptyShop">Browse Frames</a>
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn btn-primary btn-full" id="cartCheckoutBtn">Checkout on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
